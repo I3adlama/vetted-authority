@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VettedAuthority — Legitimate High-DR Guest Post & Sponsored Content Marketplace</title>
+  <meta name="description" content="Publish guest posts and sponsored content on real high Domain Rating sites. Vetted publishers only. No link farms. Proper disclosures. Monetize your brand authority safely.">
+  <meta name="keywords" content="buy guest posts, high DR guest posts, legit guest post marketplace, sponsored content, USA Today branded content, HubSpot guest post, white hat placements">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">VettedAuthority</div>
+      <nav>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#publishers">Publishers</a>
+        <a href="#write">Write</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#dashboard">Dashboard</a>
+      </nav>
+      <div id="user-area">
+        <button id="auth-btn" class="btn-primary">Sign In / Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Publish on Real High-DR Sites — Legitimately</h1>
+      <p class="subtitle">The middleman for businesses. Write once, get placed on vetted high-authority publishers with real traffic. Editorial or clearly labeled sponsored. No link farms. White-hat only.</p>
+      <div class="cta">
+        <a href="#write" class="btn-primary large">Write & Submit Article</a>
+        <a href="#publishers" class="btn-secondary large">Browse Publishers</a>
+      </div>
+      <div class="trust-badges">
+        <span>✓ Real Traffic Verified</span>
+        <span>✓ Manual Vetting</span>
+        <span>✓ FTC & Google Compliant</span>
+        <span>✓ Monetizable for Publishers & Advertisers</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3>Write</h3><p>Create valuable content in our editor.</p></div>
+        <div class="step"><div class="num">2</div><h3>Choose Publisher</h3><p>Select from vetted high-DR sites.</p></div>
+        <div class="step"><div class="num">3</div><h3>Review & Pay</h3><p>Editorial review. Pay for sponsored slots securely.</p></div>
+        <div class="step"><div class="num">4</div><h3>Published</h3><p>Live with proper labeling. Track results.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publishers" class="section alt">
+    <div class="container">
+      <h2>Vetted Publishers</h2>
+      <p class="note">Only real sites with traffic and standards. Editorial = competitive/free. Sponsored = paid + labeled.</p>
+      <div class="filters">
+        <input type="text" id="search-pub" placeholder="Search name or niche...">
+        <select id="filter-type">
+          <option value="">All</option>
+          <option value="editorial">Editorial</option>
+          <option value="sponsored">Sponsored</option>
+        </select>
+      </div>
+      <div id="publisher-list" class="grid"></div>
+    </div>
+  </section>
+
+  <section id="write" class="section">
+    <div class="container">
+      <h2>Write Your Article</h2>
+      <form id="article-form">
+        <label>Title</label>
+        <input type="text" id="title" required>
+        <label>Target Publisher</label>
+        <select id="target-pub" required></select>
+        <label>Body</label>
+        <textarea id="body" rows="12" required></textarea>
+        <div class="word-count">Words: <span id="wc">0</span></div>
+        <label>Author Bio</label>
+        <input type="text" id="bio">
+        <label>Link (reviewed for relevance)</label>
+        <input type="url" id="link">
+        <button type="submit" class="btn-primary">Submit for Review</button>
+      </form>
+      <div id="submit-msg"></div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section alt">
+    <div class="container">
+      <h2>Pricing — Monetize Placements</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Editorial Pitch</h3>
+          <p class="price">Free</p>
+          <ul><li>Competitive spots</li><li>No guarantee</li><li>You write</li></ul>
+          <button class="btn-secondary" onclick="startEditorial()">Start Free Pitch</button>
+        </div>
+        <div class="price-card featured">
+          <h3>Sponsored Placement</h3>
+          <p class="price">From $299</p>
+          <ul><li>Labeled sponsored</li><li>rel="sponsored" links</li><li>Publisher approval</li><li>Revenue share model ready</li></ul>
+          <button class="btn-primary" onclick="startSponsored()">Buy Placement</button>
+        </div>
+        <div class="price-card">
+          <h3>Publisher Account</h3>
+          <p class="price">Earn</p>
+          <ul><li>List your site</li><li>Accept submissions</li><li>Get paid for placements</li></ul>
+          <button class="btn-secondary" onclick="alert('Publisher onboarding: Contact to list your high-DR site and earn from vetted placements.')">List Your Site</button>
+        </div>
+      </div>
+      <p class="disclaimer">All paid placements are disclosed. Comply with FTC and Google policies. Platform takes a commission on successful placements.</p>
+    </div>
+  </section>
+
+  <section id="dashboard" class="section">
+    <div class="container">
+      <h2>Your Dashboard</h2>
+      <div id="submissions-list">Sign in or submit an article to see orders.</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 VettedAuthority. Legitimate marketplace. Not affiliated with listed publishers.</p>
+      <p>Ready for production: connect Stripe for payments, add backend for real accounts & publisher portal.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
